@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', 'Open Sans', 'Lato', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            position: relative;
+            background: url('Frame2.png') no-repeat center center;
+            background-size: contain;
+            width: 600px; /* Adjust based on actual image size */
+            height: 800px; /* Adjust based on actual image size */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .name-text {
+            position: absolute;
+            top: 48%; /* Adjust based on placement */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-family: 'Mohave', sans-serif;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span id="name-display" class="name-text">Dear {name},</span>
+    </div>
+</body>
+</html>

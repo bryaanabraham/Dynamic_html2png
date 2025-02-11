@@ -1,0 +1,11 @@
+pandas
+pillow
+selenium
+secure-smtplib
+oauthlib
+requests
+msal
+requests-oauthlib
+pyautogui
+keyboard
+pyperclip
