@@ -8,15 +8,13 @@ from PIL import Image
 import time
 
 class Config:
-    def __init__(self, csv_path, html_path, screenshot_path, output_image, dimensions, smtp_server, sender_email, sender_password, recipient_email):
+    def __init__(self, csv_path, html_path, screenshot_path, output_image, dimensions, smtp_server, recipient_email):
         self.csv_path = csv_path
         self.html_path = html_path
         self.screenshot_path = screenshot_path
         self.output_image = output_image
         self.dimensions = dimensions
         self.smtp_server = smtp_server
-        self.sender_email = sender_email
-        self.sender_password = sender_password
         self.recipient_email = recipient_email
 
 def find_birthdays(config):
@@ -125,8 +123,6 @@ if __name__ == "__main__":
         output_image="send.png",
         dimensions=dims[ind],
         smtp_server="smtp.office365.com",
-        sender_email="bryaanabraham25@outlook.com",
-        sender_password="Bry4n48@%)$",
         recipient_email="50010135@mahindra.com"
     )
 
